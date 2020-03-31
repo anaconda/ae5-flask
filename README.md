@@ -41,6 +41,11 @@ This package provides a simple correction by doing two things:
   full proxy URL when running the application. An example of this output
   is shown in step 4 of the usage instructions below.
 
+These patches are implemented in a post-link script when the package is
+installed, and are _not applied_ during deployments. So that means the
+package is safe to include permanently in your project, and there is no
+need to remove the package before deployment.
+
 ## Installation
 
 At the moment there is no CI or testing here. So the package will need to be
